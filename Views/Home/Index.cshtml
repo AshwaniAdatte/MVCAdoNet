@@ -1,0 +1,15 @@
+﻿
+@model IEnumerable<MVC.Models.Contacts>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model)
+{
+   <div>Name: @item.ContactName</div>
+   <div>Location: @item.Location</div><br />
+}
+
+
